@@ -48,7 +48,7 @@ public class VetorObject {
          if(posicao < 0 || posicao >= this.tamanho){
              throw new Exception("Posição Inválida!");
          }
-         for(int i = posicao; i < this.tamanho; i++){
+         for(int i = posicao; i < this.tamanho -1; i++){
              this.elementos[i] = this.elementos[i + 1];
          }
          this.elementos[tamanho - 1] = null;
